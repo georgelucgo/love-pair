@@ -69,6 +69,7 @@ a:hover {
     background-position: center;
 }
 
+
 .principal{
     display: flex;
     width: 100%;
@@ -97,3 +98,34 @@ a:hover {
     font-weight: 600;
 }
 
+#sobre{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-principal{
+    display: flex;
+    max-width: 1280px;
+}
+
+#sobre img {
+    height: 400px;
+} 
+
+#sobre h3{
+    color: #B42020;
+}
+
+.sobre-conteudo{
+    margin: 30px;
+}
+
+.sobre-conteudo h3{
+    margin-bottom: 8px;
+}
+
+.sobre-conteudo h1{
+    margin-bottom: 16px;
+}
