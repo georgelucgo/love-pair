@@ -96,10 +96,12 @@ a:hover {
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
+    color: white;
 }
 
 #sobre{
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +113,7 @@ a:hover {
 }
 
 #sobre img {
-    height: 400px;
+    height: 370px;
 } 
 
 #sobre h3{
@@ -128,4 +130,146 @@ a:hover {
 
 .sobre-conteudo h1{
     margin-bottom: 16px;
+}
+
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.produtos-conteudo{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos-conteudo h2{
+    margin-bottom: 8px;
+}
+
+.produtos-itens{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#botao-produto{
+    margin-top: 18px;
+}
+
+
+.produtos-itens img {
+    object-fit: contain;
+    height: 280px;
+    width: 100%;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    max-width: 285px;
+    height: 360px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.produto-texto{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.preco{
+    display: flex;
+}
+
+.preco h4{
+    color: #B42020;
+}
+
+.preco p{
+    margin-left: 6px;
+    color: #A6A6A6;
+    text-decoration: line-through;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+}
+
+.contatos-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+}
+
+#contato-texto {
+    text-align: center;
+    margin-top: 8px;
+    max-width: 800px;
+}
+
+.contato-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #B9B3B3;
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+input{
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #B9B3B3;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    resize: none;
+    border: 1px solid #B9B3B3;
+    border-radius: 4px;
+}
+
+#botao-produto{
+    margin: 30px auto 0;
+    text-align: center;
+    width: 200px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #700000;
+}
+
+footer p{
+    font-size: 12px;
+}
+footer img {
+    height: 100px;
+    margin: 8px;
+    object-fit: contain;
 }
