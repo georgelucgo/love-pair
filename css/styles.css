@@ -13,7 +13,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #700000;
+    background-color: var(--header-color);
     height: 100%;
 }
 
@@ -53,7 +53,7 @@ a {
     color: white;
 }
 
-a:hover {
+nav a:hover {
     border-bottom: 1px solid #fff;
 }
 
@@ -64,7 +64,7 @@ a:hover {
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/banner.jpg") ;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: scroll;
     background-position: center;
 }
@@ -91,12 +91,16 @@ a:hover {
 }
 
 .botao{
-    background-color: #950909;
+    background-color: var(--button-color);
     padding: 12px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
     color: white;
+    transition: 0.2s;
+}
+.botao:hover{
+    transform: scale(1.02);
 }
 
 #sobre{
@@ -109,18 +113,22 @@ a:hover {
 
 .sobre-principal{
     display: flex;
+    padding: 16px;
     max-width: 1280px;
 }
 
 #sobre img {
-    height: 370px;
+    width: 100%;
+    max-width: 370px;
+    max-height: 370px;
 } 
 
 #sobre h3{
-    color: #B42020;
+    color: var(--text-color);
 }
 
 .sobre-conteudo{
+    text-align: justify;
     margin: 30px;
 }
 
@@ -152,13 +160,34 @@ a:hover {
     margin-bottom: 8px;
 }
 
+#catalogo-texto{
+    text-align: center;
+}
+
 .produtos-itens{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    gap: 10px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 100px;
 }
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 360px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    transition: 0.2s;
+
+}
+
 
 #botao-produto{
     margin-top: 18px;
@@ -171,17 +200,11 @@ a:hover {
     width: 100%;
 }
 
-.produto{
-    display: flex;
-    flex-direction: column;
-    max-width: 285px;
-    height: 360px;
-    border-radius: 4px;
-    font-size: 0.8em;
-    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2);
-    padding: 8px;
-}
 
+.produto:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
 .produto-texto{
     margin-top: 10px;
     display: flex;
@@ -195,7 +218,7 @@ a:hover {
 }
 
 .preco h4{
-    color: #B42020;
+    color: var(--text-color);
 }
 
 .preco p{
@@ -207,6 +230,7 @@ a:hover {
 .contatos{
     display: flex;
     justify-content: center;
+    
 }
 
 .contatos-conteudo{
@@ -214,6 +238,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     max-width: 1280px;
+    margin: 8px;
 }
 
 #contato-texto {
@@ -228,7 +253,7 @@ a:hover {
     width: 100%;
     border: 2px solid #B9B3B3;
     border-radius: 16px;
-    padding: 32px;
+    padding: 18px;
     margin-top: 20px;
     margin-bottom: 100px;
 }
@@ -239,6 +264,7 @@ input{
     padding: 8px;
     border: 1px solid #B9B3B3;
     border-radius: 4px;
+    font-size: 1em;
 }
 
 textarea{
@@ -262,14 +288,21 @@ footer{
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #700000;
+    background-color: var(--header-color);
 }
 
 footer p{
-    font-size: 12px;
+    font-size: 0.8em;
 }
 footer img {
+    width:100%;
     height: 100px;
     margin: 8px;
     object-fit: contain;
+    transition: 0.2s;
+}
+
+footer img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }

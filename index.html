@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Pair: Produtos que se combinam</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pallete.css">
 </head>
 <body>
     <header>
@@ -16,9 +18,9 @@
             </div>
     
             <nav>
-                <a href="">Inicio</a>
-                <a href="">Sobre</a>
-                <a href="">Contato</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contatos">Contato</a>
             </nav>
         </section>
     </header>
@@ -31,8 +33,8 @@
                     
                     <p id="principal-text">Oferecemos acessórios e roupas exclusivas que combinam perfeitamente entre si, celebrando a conexão única entre você e sua pessoa especial. Com design cuidadoso e qualidade impecável, nossos produtos trazem harmonia e estilo para o seu relacionamento.</p>
 
-                    <div class="botao"><p>Veja nossos produtos</p>
-                    </div>              
+                    <a href="#produtos"><div class="botao"><p>Veja nossos produtos</p>
+                    </div> </a>             
                 </div>  
             </div>
         </section>
@@ -50,7 +52,7 @@
             </div>
         </section>
 
-        <section class="produtos">
+        <section id="produtos" class="produtos">
             <div class="produtos-conteudo">
                 <h2>Produtos</h2>
                 <p>Conheça os nossos produtos mais vendidos</p>
@@ -102,13 +104,13 @@
                 </div>
 
                 <h2>Quer ver mais produtos incríveis?</h2>
-                <p>Acesse nosso catálogo e descubra itens que celebram a conexão entre vocês!</p>
+                <p id="catalogo-texto">Acesse nosso catálogo e descubra itens que celebram a conexão entre vocês!</p>
                 <div class="botao" id="botao-produto"><p>Veja nossos produtos</p></div>
 
             </div>
         </section>
 
-        <section class="contatos">
+        <section class="contatos" id="contatos">
             <div class="contatos-conteudo">
                 <h1>Entre em contato conosco</h1>
                 <p id="contato-texto">Se você tem alguma dúvida sobre nossos produtos ou deseja saber mais sobre nossas ofertas, estamos prontos para ajudar! Entre em contato e nossa equipe estará à disposição para fornecer todas as informações necessárias.</p>
@@ -132,7 +134,7 @@
     </main>
 
     <footer>
-        <img src="img/logo.png" alt="">
+        <a href=""><img src="img/logo.png" alt=""></a>
         <p>@2024 Love Pair. Todos os direitos reservados.</p>
     </footer>
     
